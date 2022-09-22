@@ -1,0 +1,193 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_Owner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_MediaLink",
+        "type": "string"
+      }
+    ],
+    "name": "ChangePicture",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GetPicture",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_Opponent",
+        "type": "address"
+      }
+    ],
+    "name": "Message",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "FromAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "ToAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "MessageText",
+            "type": "string"
+          },
+          {
+            "internalType": "string[]",
+            "name": "MediaLink",
+            "type": "string[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "MessageTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "BlockHeight",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MessageStorage.MessageStruct[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_FromAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_ToAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_MessageText",
+        "type": "string"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_MediaLink",
+        "type": "string[]"
+      }
+    ],
+    "name": "NewMessage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "Opponents",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "Opponent",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "FromAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "ToAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "MessageText",
+                "type": "string"
+              },
+              {
+                "internalType": "string[]",
+                "name": "MediaLink",
+                "type": "string[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "MessageTimestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "BlockHeight",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MessageStorage.MessageStruct",
+            "name": "Messages",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct MessageStorage.OpponentStruct[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "StorageProfile",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "Owner",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "Picture",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
